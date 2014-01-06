@@ -1,4 +1,4 @@
-﻿namespace Console.PowerPack.Core
+﻿namespace VSConsole.PowerPack.Core
 {
     public enum TokenType
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Console.PowerPack.Core
+namespace VSConsole.PowerPack.Core
 {
     public class UtilityMethods
     {

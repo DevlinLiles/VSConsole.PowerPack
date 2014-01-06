@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Console.PowerPack.Core
+namespace VSConsole.PowerPack.Core
 {
     public interface ICommandTokenizer
     {

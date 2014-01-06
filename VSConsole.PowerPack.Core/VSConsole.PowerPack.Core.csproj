@@ -80,16 +80,7 @@
     <Reference Include="System.Xaml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassifierProvider.cs" />
-    <Compile Include="CommonExtensionMethods.cs" />
-    <Compile Include="CompletionSourceProvider.cs" />
-    <Compile Include="ComplexCommandSpans.cs" />
-    <Compile Include="ConsoleDispatcher.cs" />
-    <Compile Include="ConsolePowerPackWindow.cs" />
     <Compile Include="DisplayNameAttribute.cs" />
-    <Compile Include="EventArgs.cs" />
-    <Compile Include="ExtensionMethods.cs" />
-    <Compile Include="HostInfo.cs" />
     <Compile Include="HostNameAttribute.cs" />
     <Compile Include="IAsyncHost.cs" />
     <Compile Include="ICommandExpansion.cs" />
@@ -98,46 +89,16 @@
     <Compile Include="ICommandTokenizerProvider.cs" />
     <Compile Include="IConsole.cs" />
     <Compile Include="IConsoleDispatcher.cs" />
-    <Compile Include="IConsolePowerPackWindow.cs" />
-    <Compile Include="IGetSpan.cs" />
+    <Compile Include="IVsConsoleWindow.cs" />
     <Compile Include="IHost.cs" />
-    <Compile Include="IHostMetadata.cs" />
-    <Compile Include="IHostNameMetadata.cs" />
     <Compile Include="IHostProvider.cs" />
-    <Compile Include="INameMetadata.cs" />
-    <Compile Include="InputHistory.cs" />
-    <Compile Include="InputLine.cs" />
-    <Compile Include="InputLineFlag.cs" />
-    <Compile Include="IPowerShellHost.cs" />
-    <Compile Include="IPowerShellHostService.cs" />
-    <Compile Include="IPrivateConsoleDispatcher.cs" />
-    <Compile Include="IPrivateWpfConsole.cs" />
-    <Compile Include="ITextFormatClassifier.cs" />
-    <Compile Include="ITextFormatClassifierProvider.cs" />
     <Compile Include="IWpfConsole.cs" />
     <Compile Include="IWpfConsoleService.cs" />
-    <Compile Include="Marshaler.cs" />
-    <Compile Include="ObjectWithFactory.cs" />
-    <Compile Include="OleCommandFilter.cs" />
-    <Compile Include="OrderedSpans.cs" />
-    <Compile Include="OrderedSpansOfT.cs" />
-    <Compile Include="OrderedTupleSpans.cs" />
-    <Compile Include="Package.cs" />
-    <Compile Include="PkgCmdIDList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProvideBindingPathAttribute.cs" />
-    <Compile Include="Settings.cs" />
     <Compile Include="SimpleExpansion.cs" />
-    <Compile Include="TextFormatClassifier.cs" />
-    <Compile Include="TextFormatClassifierProvider.cs" />
     <Compile Include="Token.cs" />
     <Compile Include="TokenType.cs" />
     <Compile Include="UtilityMethods.cs" />
-    <Compile Include="WpfConsole.cs" />
-    <Compile Include="WpfConsoleClassifier.cs" />
-    <Compile Include="WpfConsoleCompletionSource.cs" />
-    <Compile Include="WpfConsoleKeyProcessor.cs" />
-    <Compile Include="WpfConsoleService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Key.snk" />

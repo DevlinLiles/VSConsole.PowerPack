@@ -1,6 +1,6 @@
 ﻿using System.Windows.Media;
 
-namespace Console.PowerPack.Core
+namespace VSConsole.PowerPack.Core
 {
     public interface IConsole
     {

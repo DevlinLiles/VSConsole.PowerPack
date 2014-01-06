@@ -40,6 +40,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Editor, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Language.Intellisense, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Language.StandardClassification, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.OLE.Interop" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0" />
@@ -51,11 +56,26 @@
     <Reference Include="Microsoft.VisualStudio.Shell.Interop.12.0">
       <EmbedInteropTypes>true</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.Text.Data, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Text.Logic, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Text.UI, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.TextManager.Interop" />
     <Reference Include="Microsoft.VisualStudio.Shell.12.0" />
     <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0" />
     <Reference Include="Microsoft.VisualStudio.Shell.Immutable.11.0" />
     <Reference Include="Microsoft.VisualStudio.Shell.Immutable.12.0" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.11.0, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop.9.0, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
@@ -126,6 +146,41 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Console\ComplexCommandSpans.cs" />
+    <Compile Include="Controls\Console\ConsoleDispatcher.cs" />
+    <Compile Include="Controls\Console\IGetSpan.cs" />
+    <Compile Include="Controls\Console\IHostNameMetadata.cs" />
+    <Compile Include="Controls\Console\INameMetadata.cs" />
+    <Compile Include="Controls\Console\InputHistory.cs" />
+    <Compile Include="Controls\Console\InputLine.cs" />
+    <Compile Include="Controls\Console\InputLineFlag.cs" />
+    <Compile Include="Controls\Console\IPrivateConsoleDispatcher.cs" />
+    <Compile Include="Controls\Console\IPrivateWpfConsole.cs" />
+    <Compile Include="Controls\Console\ITextFormatClassifier.cs" />
+    <Compile Include="Controls\Console\ITextFormatClassifierProvider.cs" />
+    <Compile Include="Controls\Console\OleCommandFilter.cs" />
+    <Compile Include="Controls\Console\OrderedSpans.cs" />
+    <Compile Include="Controls\Console\OrderedSpansOfT.cs" />
+    <Compile Include="Controls\Console\OrderedTupleSpans.cs" />
+    <Compile Include="Controls\Console\TextFormatClassifier.cs" />
+    <Compile Include="Controls\Console\TextFormatClassifierProvider.cs" />
+    <Compile Include="Controls\Console\WpfConsole.cs" />
+    <Compile Include="Controls\Console\WpfConsoleClassifier.cs" />
+    <Compile Include="Controls\Console\WpfConsoleCompletionSource.cs" />
+    <Compile Include="Controls\Console\WpfConsoleKeyProcessor.cs" />
+    <Compile Include="Controls\Console\WpfConsoleService.cs" />
+    <Compile Include="Controls\Helpers\CommonExtensions.cs" />
+    <Compile Include="Controls\Helpers\EventArgs.cs" />
+    <Compile Include="Controls\Helpers\ExtensionMethods.cs" />
+    <Compile Include="Controls\Helpers\Marshaler.cs" />
+    <Compile Include="Controls\Helpers\ObjectWithFactory.cs" />
+    <Compile Include="Controls\Implementation\ClassifierProvider.cs" />
+    <Compile Include="Controls\Implementation\CompletionSourceProvider.cs" />
+    <Compile Include="Controls\Implementation\HostInfo.cs" />
+    <Compile Include="Controls\Implementation\IHostMetadata.cs" />
+    <Compile Include="Controls\Implementation\ProvideBindingPathAttribute.cs" />
+    <Compile Include="Controls\Implementation\Settings.cs" />
+    <Compile Include="Controls\Implementation\VsConsoleWindow.cs" />
     <Compile Include="VsConsoleToolWindow.cs" />
     <Compile Include="VsConsoleControl.xaml.cs">
       <DependentUpon>VsConsoleControl.xaml</DependentUpon>
@@ -181,6 +236,14 @@
     <ProjectReference Include="..\VSConsole.PowerPack.Core\VSConsole.PowerPack.Core.csproj">
       <Project>{22BD750C-4CDA-4354-9655-BB6C860710A0}</Project>
       <Name>VSConsole.PowerPack.Core</Name>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
+    </ProjectReference>
+    <ProjectReference Include="..\VsConsole.PowerPack.Host\VsConsole.PowerPack.Host.csproj">
+      <Project>{84EB5609-0109-441A-A7B4-93DF9361F01A}</Project>
+      <Name>VsConsole.PowerPack.Host</Name>
+      <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3bPkgdefProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

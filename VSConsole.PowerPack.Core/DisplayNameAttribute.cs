@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.Composition;
 
-namespace Console.PowerPack.Core
+namespace VSConsole.PowerPack.Core
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     [MetadataAttribute]
